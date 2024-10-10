@@ -1,6 +1,6 @@
 function ServiceDetail() {
     return (
-     <div></div>
+     <b></b>
     );
   }
 

@@ -1,6 +1,11 @@
 function Footer() {
     return (
-     <div></div>
+      <div>
+     <b>About company</b>
+     <b>Contact</b>
+     <b>Legal</b>
+     <b>Adress</b>
+     </div>
     );
   }
 

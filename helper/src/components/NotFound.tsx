@@ -1,6 +1,6 @@
 function NotFound() {
     return (
-     <div></div>
+     <b></b>
     );
   }
 
