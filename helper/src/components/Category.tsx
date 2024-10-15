@@ -1,15 +1,13 @@
-import { List } from 'antd';
-
 function Category(props: any) {
     return (
     <div>
         <img src={props.props.img} alt="Pic" width="50" height="40"></img>
-        <List
-            size="large"
-            bordered
-            dataSource={props.props.services}
-            renderItem={(item:any) => <List.Item>{item}</List.Item>}
-        />
+        <ul>
+            <li>{props.props.services[0]}</li>
+            <li>{props.props.services[1]}</li>
+            <li>{props.props.services[2]}</li>
+            <li>{props.props.services[3]}</li>
+        </ul>
     </div>
     );
   }
