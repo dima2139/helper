@@ -6,5 +6,4 @@ let images = {
     "category4-image": "https://www.shutterstock.com/image-photo/mechanic-using-wrench-while-working-600nw-2184125681.jpg"
 }
 
-
 export default images
