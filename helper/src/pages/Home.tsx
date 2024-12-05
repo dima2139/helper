@@ -1,6 +1,7 @@
 import images from "../assets/images";
 import Category from "../components/Category";
 import './../App.css';
+import { useNavigate } from 'react-router-dom';
 
 let a = {
   "Category1" : {
@@ -32,6 +33,8 @@ let a = {
     ]
   }
 }
+
+
 
 function Home() {
     return (
