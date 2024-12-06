@@ -1,6 +1,7 @@
 import { List } from 'antd';
 
 function Category(props: any) {
+    console.log(props)
     return (
     <div>
         <img src={props.props.img} alt="Pic" width="50" height="40"></img>
