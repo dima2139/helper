@@ -7,28 +7,34 @@ function Login() {
 
     const handleLoginClick = () => {
         axios
-        .post('http://localhost:3001/login', {Login : "dima"})
+        .post('http://13.60.50.42/login', {Login : loginInputValue, Password: passwordInputValue})
         .then((response) => {
-            setInputValue("")
+            setLoginInputValue("")
+            setPasswordInputValue("")
         })
         .catch((err) => {
           
         });
       };
     
-    const [inputValue, setInputValue] = useState("");
+    const [loginInputValue, setLoginInputValue] = useState("");
+    const [passwordInputValue, setPasswordInputValue] = useState("");
     
         // Step 2: Handle input changes
-        const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setInputValue(event.target.value); // Update state with the current input value
+        const handleLoginInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+            setLoginInputValue(event.target.value); // Update state with the current input value
+        };
+
+        const handlePasswordInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+            setPasswordInputValue(event.target.value); // Update state with the current input value
         };
     
     return (
         <>  
             <b>Login</b>
-            <Input size="large" type="text" value={inputValue} onChange={handleInputChange} />
+            <Input size="large" type="text" value={loginInputValue} onChange={handleLoginInputChange} />
             <b>Password</b>
-            <Input size="large" />
+            <Input size="large" type="text" value={passwordInputValue} onChange={handlePasswordInputChange} />
             <Button onClick={handleLoginClick}>Login</Button>
         </>
     );
